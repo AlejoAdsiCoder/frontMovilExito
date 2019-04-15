@@ -1,0 +1,44 @@
+header {
+  height: 110px; }
+  header nav {
+    background-color: #61008a;
+    height: 71px; }
+    header nav div#movilexito {
+      background-image: url(../img/movil-exito.jpg);
+      background-size: 141px;
+      background-repeat: no-repeat;
+      border-radius: 0px 56px 56px 0px;
+      width: 156.7px;
+      background-color: white;
+      height: 84px; }
+    header nav ol#menu {
+      margin: 0 auto;
+      /* border: 1px solid white; */
+      list-style: none;
+      width: 811px;
+      position: absolute;
+      top: 24px;
+      left: 430px; }
+      header nav ol#menu li {
+        display: inline-block;
+        margin-left: 8px;
+        color: white; }
+    header nav div#movilexito, header nav ol#menu {
+      display: inline-block; }
+
+section.bann {
+  background-image: url(../img/img-slider.png);
+  width: 1440px;
+  height: 435px;
+  background-size: 1440px; }
+
+section.paquetes h2 {
+  text-align: center; }
+section.paquetes .promos {
+  border: 1px solid black;
+  width: 330px;
+  height: 390px;
+  display: inline-block;
+  vertical-align: top; }
+
+/*# sourceMappingURL=main.css.map */
