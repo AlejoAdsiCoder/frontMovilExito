@@ -9,6 +9,8 @@ header {
             width: 156.7px;
             background-color: white;
             height: 84px;
+            position: absolute;
+            z-index: 2;
         }
         background-color: #61008a;
         height: 71px;
@@ -36,22 +38,234 @@ header {
 
 section.bann {
     background-image: url(../img/img-slider.png);
-    width: 1440px;
-    height: 435px;
-    background-size: 1440px;
+    width: 1920px;
+    height: 595px;
+    background-size: cover;
+    position: relative;
+    bottom: 42px;
 }
 
 section.paquetes {
     .pack {
+        width: max-content;
+        margin: 0 auto;
         h2 {
             text-align: center;
         }
         .promos {
             border: 1px solid black;
+            padding: 17px;
             width: 330px;
             height: 390px;
             display: inline-block;
+
             vertical-align: top;
+            .price {
+                color: #61008a;
+                font-weight: bold;
+                font-size: 2.5em;
+                .dc {
+                    font-size: 26px;
+                    margin-top: 7px;
+                    vertical-align: text-top;
+                }
+            }
+            .vig {
+                color: #61008a;
+                margin-top: -28px;
+                font-size: 11px;
+                #dias {
+                    font-weight: bolder
+                }
+            }
+            .whats {
+                .icon {
+                    background: url(../img/whats.png);
+                    width: 35.1px;
+                    height: 37.5px;
+                }
+                .icon, .wt, .wt2 {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .wt2 {
+                    position: relative;
+                    bottom: 19px;
+                    left: 45px;
+                    background-color: #61008a;
+                    color: #fff;
+                    padding: 2px;
+                    font-weight: bold;
+                    font-size: 8px;
+                    #con {
+                        color: #ffe800;
+                    }
+                }
+                .wt {
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+                #wt {
+                    font-weight: bolder;
+                    color: #00b269;
+                }
+            }
+            .ba {
+                .icon {
+                    background: url(../img/planet.png);
+                    background-size: cover;
+                    width: 35.1px;
+                    height: 38px;
+                }
+                .icon, .cant {
+                    display: inline-block;
+                }
+                .cant {
+                    position: relative;
+                    top: -4px;
+                }
+                font-weight: bold;
+                color: #61008a;
+                font-size: 3.5em;
+                margin-top: -35px;
+                .datos {
+                    font-size: 28px;
+                    vertical-align: text-top;
+                    margin-top: 22px;
+                    font-weight: bold;
+                    margin-left: -9px;
+                    position: relative;
+                    top: 3px;
+                }
+                .total {
+                    font-size: 12px;
+                    position: relative;
+                    bottom: 11px;
+                    color: black;
+                    right: 48px;
+                    /* margin-left: -48px; */
+                    font-weight: lighter;
+                }
+            }
+            .tel {
+                .icon {
+                    background: url(../img/tel.png);
+                    width: 35.6px;
+                    height: 38px;
+                    background-size: cover;
+                }
+                .icon, .cant {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .cant {
+                    margin-left: 6px;
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    color: #61008a;
+                    /* vertical-align: text-top; */
+                    margin-top: -16px;
+                    .seg {
+                        color: #61008a;
+                        /* margin-top: -49px; */
+                        font-size: 11px;
+                        position: relative;
+                        top: 12px;
+                        right: 118px;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            hr.dos {
+                width: 77px;
+                margin-top: 7px;
+                margin-left: 46px;
+            }
+
+            .sms {
+                .icon {
+                    background: url(../img/sms.png);
+                    width: 35.6px;
+                    height: 38px;
+                    background-size: cover;
+                }
+                .icon, .cant {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .cant {
+                    margin-left: 6px;
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    color: #61008a;
+                    /* vertical-align: text-top; */
+                    margin-top: -16px;
+                    span.sms {
+                        color: #61008a;
+                        /* margin-top: -49px; */
+                        font-size: 11px;
+                        position: relative;
+                        top: 12px;
+                        right: 50px;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+        #pk1 {
+            .sms {
+                .cant {
+                    span.sms {
+                        right: 42px;
+                    }
+                }
+            }
+        }
+        #pk2 {
+            margin-left: 51px;
+            .ba {
+                .datos {
+                    margin-left: 1px;
+                }
+                .total {
+                    margin-left: 8px;
+                }
+            }
+        }
+        #pk3 {
+            margin-left: 51px;
+            .ba {
+                .datos {
+                    margin-left: 1px;
+                }
+                .total {
+                    margin-left: 8px;
+                }
+            }
+            .tel {
+                .cant {
+                    .seg {
+                        right: 142px;
+                    }
+                }
+                
+            }
+            .sms {
+                .cant {
+                    span.sms {
+                        right: 78px;
+                    }
+                }
+            }
+        }
+        hr.uno {
+            width: 77px;
+            margin-top: -15px;
+            margin-left: 50px;
         }
     }
 }

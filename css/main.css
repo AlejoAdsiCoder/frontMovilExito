@@ -1,53 +1,197 @@
 header {
-  height: 110px;
-}
-header nav {
-  background-color: #61008a;
-  height: 71px;
-}
-header nav div#movilexito {
-  background-image: url(../img/movil-exito.jpg);
-  background-size: 141px;
-  background-repeat: no-repeat;
-  border-radius: 0px 56px 56px 0px;
-  width: 156.7px;
-  background-color: white;
-  height: 84px;
-}
-header nav ol#menu {
-  margin: 0 auto;
-  /* border: 1px solid white; */
-  list-style: none;
-  width: 811px;
-  position: absolute;
-  top: 24px;
-  left: 430px;
-}
-header nav ol#menu li {
-  display: inline-block;
-  margin-left: 8px;
-  color: white;
-}
-header nav div#movilexito, header nav ol#menu {
-  display: inline-block;
-}
+  height: 110px; }
+  header nav {
+    background-color: #61008a;
+    height: 71px; }
+    header nav div#movilexito {
+      background-image: url(../img/movil-exito.jpg);
+      background-size: 141px;
+      background-repeat: no-repeat;
+      border-radius: 0px 56px 56px 0px;
+      width: 156.7px;
+      background-color: white;
+      height: 84px;
+      position: absolute;
+      z-index: 2; }
+    header nav ol#menu {
+      margin: 0 auto;
+      /* border: 1px solid white; */
+      list-style: none;
+      width: 811px;
+      position: absolute;
+      top: 24px;
+      left: 430px; }
+      header nav ol#menu li {
+        display: inline-block;
+        margin-left: 8px;
+        color: white; }
+    header nav div#movilexito, header nav ol#menu {
+      display: inline-block; }
 
 section.bann {
   background-image: url(../img/img-slider.png);
-  width: 1440px;
-  height: 435px;
-  background-size: 1440px;
-}
+  width: 1920px;
+  height: 595px;
+  background-size: cover;
+  position: relative;
+  bottom: 42px; }
 
-section.paquetes .pack h2 {
-  text-align: center;
-}
-section.paquetes .pack .promos {
-  border: 1px solid black;
-  width: 330px;
-  height: 390px;
-  display: inline-block;
-  vertical-align: top;
-}
+section.paquetes .pack {
+  width: max-content;
+  margin: 0 auto; }
+  section.paquetes .pack h2 {
+    text-align: center; }
+  section.paquetes .pack .promos {
+    border: 1px solid black;
+    padding: 17px;
+    width: 330px;
+    height: 390px;
+    display: inline-block;
+    vertical-align: top; }
+    section.paquetes .pack .promos .price {
+      color: #61008a;
+      font-weight: bold;
+      font-size: 2.5em; }
+      section.paquetes .pack .promos .price .dc {
+        font-size: 26px;
+        margin-top: 7px;
+        vertical-align: text-top; }
+    section.paquetes .pack .promos .vig {
+      color: #61008a;
+      margin-top: -28px;
+      font-size: 11px; }
+      section.paquetes .pack .promos .vig #dias {
+        font-weight: bolder; }
+    section.paquetes .pack .promos .whats .icon {
+      background: url(../img/whats.png);
+      width: 35.1px;
+      height: 37.5px; }
+    section.paquetes .pack .promos .whats .icon, section.paquetes .pack .promos .whats .wt, section.paquetes .pack .promos .whats .wt2 {
+      display: inline-block;
+      vertical-align: top; }
+    section.paquetes .pack .promos .whats .wt2 {
+      position: relative;
+      bottom: 19px;
+      left: 45px;
+      background-color: #61008a;
+      color: #fff;
+      padding: 2px;
+      font-weight: bold;
+      font-size: 8px; }
+      section.paquetes .pack .promos .whats .wt2 #con {
+        color: #ffe800; }
+    section.paquetes .pack .promos .whats .wt {
+      font-size: 15px;
+      margin-left: 5px; }
+    section.paquetes .pack .promos .whats #wt {
+      font-weight: bolder;
+      color: #00b269; }
+    section.paquetes .pack .promos .ba {
+      font-weight: bold;
+      color: #61008a;
+      font-size: 3.5em;
+      margin-top: -35px; }
+      section.paquetes .pack .promos .ba .icon {
+        background: url(../img/planet.png);
+        background-size: cover;
+        width: 35.1px;
+        height: 38px; }
+      section.paquetes .pack .promos .ba .icon, section.paquetes .pack .promos .ba .cant {
+        display: inline-block; }
+      section.paquetes .pack .promos .ba .cant {
+        position: relative;
+        top: -4px; }
+      section.paquetes .pack .promos .ba .datos {
+        font-size: 28px;
+        vertical-align: text-top;
+        margin-top: 22px;
+        font-weight: bold;
+        margin-left: -9px;
+        position: relative;
+        top: 3px; }
+      section.paquetes .pack .promos .ba .total {
+        font-size: 12px;
+        position: relative;
+        bottom: 11px;
+        color: black;
+        right: 48px;
+        /* margin-left: -48px; */
+        font-weight: lighter; }
+    section.paquetes .pack .promos .tel .icon {
+      background: url(../img/tel.png);
+      width: 35.6px;
+      height: 38px;
+      background-size: cover; }
+    section.paquetes .pack .promos .tel .icon, section.paquetes .pack .promos .tel .cant {
+      display: inline-block;
+      vertical-align: top; }
+    section.paquetes .pack .promos .tel .cant {
+      margin-left: 6px;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #61008a;
+      /* vertical-align: text-top; */
+      margin-top: -16px; }
+      section.paquetes .pack .promos .tel .cant .seg {
+        color: #61008a;
+        /* margin-top: -49px; */
+        font-size: 11px;
+        position: relative;
+        top: 12px;
+        right: 118px;
+        color: black;
+        font-size: 12px;
+        font-weight: lighter; }
+    section.paquetes .pack .promos hr.dos {
+      width: 77px;
+      margin-top: 7px;
+      margin-left: 46px; }
+    section.paquetes .pack .promos .sms .icon {
+      background: url(../img/sms.png);
+      width: 35.6px;
+      height: 38px;
+      background-size: cover; }
+    section.paquetes .pack .promos .sms .icon, section.paquetes .pack .promos .sms .cant {
+      display: inline-block;
+      vertical-align: top; }
+    section.paquetes .pack .promos .sms .cant {
+      margin-left: 6px;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #61008a;
+      /* vertical-align: text-top; */
+      margin-top: -16px; }
+      section.paquetes .pack .promos .sms .cant span.sms {
+        color: #61008a;
+        /* margin-top: -49px; */
+        font-size: 11px;
+        position: relative;
+        top: 12px;
+        right: 50px;
+        color: black;
+        font-size: 12px;
+        font-weight: lighter; }
+  section.paquetes .pack #pk1 .sms .cant span.sms {
+    right: 42px; }
+  section.paquetes .pack #pk2 {
+    margin-left: 51px; }
+    section.paquetes .pack #pk2 .ba .datos {
+      margin-left: 1px; }
+    section.paquetes .pack #pk2 .ba .total {
+      margin-left: 8px; }
+  section.paquetes .pack #pk3 {
+    margin-left: 51px; }
+    section.paquetes .pack #pk3 .ba .datos {
+      margin-left: 1px; }
+    section.paquetes .pack #pk3 .ba .total {
+      margin-left: 8px; }
+    section.paquetes .pack #pk3 .tel .cant .seg {
+      right: 142px; }
+    section.paquetes .pack #pk3 .sms .cant span.sms {
+      right: 78px; }
+  section.paquetes .pack hr.uno {
+    width: 77px;
+    margin-top: -15px;
+    margin-left: 50px; }
 
 /*# sourceMappingURL=main.css.map */
