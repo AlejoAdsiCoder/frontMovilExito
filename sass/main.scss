@@ -42,14 +42,16 @@ section.bann {
 }
 
 section.paquetes {
-    h2 {
-        text-align: center;
-    }
-    .promos {
-        border: 1px solid black;
-        width: 330px;
-        height: 390px;
-        display: inline-block;
-        vertical-align: top;
+    .pack {
+        h2 {
+            text-align: center;
+        }
+        .promos {
+            border: 1px solid black;
+            width: 330px;
+            height: 390px;
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 }
