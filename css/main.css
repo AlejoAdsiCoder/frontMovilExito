@@ -36,162 +36,259 @@ section.bann {
   position: relative;
   bottom: 42px; }
 
-section.paquetes .pack {
-  width: max-content;
-  margin: 0 auto; }
-  section.paquetes .pack h2 {
-    text-align: center; }
-  section.paquetes .pack .promos {
-    border: 1px solid black;
-    padding: 17px;
-    width: 330px;
-    height: 390px;
-    display: inline-block;
-    vertical-align: top; }
-    section.paquetes .pack .promos .price {
-      color: #61008a;
-      font-weight: bold;
-      font-size: 2.5em; }
-      section.paquetes .pack .promos .price .dc {
-        font-size: 26px;
-        margin-top: 7px;
-        vertical-align: text-top; }
-    section.paquetes .pack .promos .vig {
-      color: #61008a;
-      margin-top: -28px;
-      font-size: 11px; }
-      section.paquetes .pack .promos .vig #dias {
-        font-weight: bolder; }
-    section.paquetes .pack .promos .whats .icon {
-      background: url(../img/whats.png);
-      width: 35.1px;
-      height: 37.5px; }
-    section.paquetes .pack .promos .whats .icon, section.paquetes .pack .promos .whats .wt, section.paquetes .pack .promos .whats .wt2 {
+section.paquetes {
+  margin-bottom: 80px; }
+  section.paquetes .pack {
+    width: max-content;
+    margin: 0 auto; }
+    section.paquetes .pack h2 {
+      text-align: center; }
+    section.paquetes .pack .promos {
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 0 4px 5px 0 rgba(130, 130, 130, 0.2);
+      border: solid 1.3px var(--light-eggplant-20);
+      background-color: #ffffff;
+      width: 330px;
+      height: 379px;
       display: inline-block;
       vertical-align: top; }
-    section.paquetes .pack .promos .whats .wt2 {
-      position: relative;
-      bottom: 19px;
-      left: 45px;
-      background-color: #61008a;
-      color: #fff;
-      padding: 2px;
-      font-weight: bold;
-      font-size: 8px; }
-      section.paquetes .pack .promos .whats .wt2 #con {
-        color: #ffe800; }
-    section.paquetes .pack .promos .whats .wt {
-      font-size: 15px;
-      margin-left: 5px; }
-    section.paquetes .pack .promos .whats #wt {
-      font-weight: bolder;
-      color: #00b269; }
-    section.paquetes .pack .promos .ba {
-      font-weight: bold;
-      color: #61008a;
-      font-size: 3.5em;
-      margin-top: -35px; }
-      section.paquetes .pack .promos .ba .icon {
-        background: url(../img/planet.png);
-        background-size: cover;
-        width: 35.1px;
-        height: 38px; }
-      section.paquetes .pack .promos .ba .icon, section.paquetes .pack .promos .ba .cant {
+      section.paquetes .pack .promos .img {
+        width: 22.5%;
+        height: 386px;
+        background-size: 80px 389px;
+        background-position: 155px 777px;
+        /* float: left; */
         display: inline-block; }
-      section.paquetes .pack .promos .ba .cant {
-        position: relative;
-        top: -4px; }
-      section.paquetes .pack .promos .ba .datos {
-        font-size: 28px;
-        vertical-align: text-top;
-        margin-top: 22px;
+      section.paquetes .pack .promos .content {
+        width: 76%;
+        display: inline-block;
+        /* padding: 17px; */
+        vertical-align: top;
+        margin-left: 0px;
+        height: 100%; }
+      section.paquetes .pack .promos .price {
+        color: #61008a;
         font-weight: bold;
-        margin-left: -9px;
-        position: relative;
-        top: 3px; }
-      section.paquetes .pack .promos .ba .total {
-        font-size: 12px;
-        position: relative;
-        bottom: 11px;
-        color: black;
-        right: 48px;
-        /* margin-left: -48px; */
-        font-weight: lighter; }
-    section.paquetes .pack .promos .tel .icon {
-      background: url(../img/tel.png);
-      width: 35.6px;
-      height: 38px;
-      background-size: cover; }
-    section.paquetes .pack .promos .tel .icon, section.paquetes .pack .promos .tel .cant {
-      display: inline-block;
-      vertical-align: top; }
-    section.paquetes .pack .promos .tel .cant {
-      margin-left: 6px;
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #61008a;
-      /* vertical-align: text-top; */
-      margin-top: -16px; }
-      section.paquetes .pack .promos .tel .cant .seg {
+        font-size: 2.5em; }
+        section.paquetes .pack .promos .price .dc {
+          font-size: 26px;
+          margin-top: 7px;
+          vertical-align: text-top; }
+      section.paquetes .pack .promos .vig {
         color: #61008a;
-        /* margin-top: -49px; */
-        font-size: 11px;
+        margin-top: -28px;
+        font-size: 11px; }
+        section.paquetes .pack .promos .vig #dias {
+          font-weight: bolder; }
+      section.paquetes .pack .promos .whats .icon {
+        background: url(../img/whats.png);
+        width: 35.1px;
+        height: 37.5px; }
+      section.paquetes .pack .promos .whats .icon, section.paquetes .pack .promos .whats .wt, section.paquetes .pack .promos .whats .wt2 {
+        display: inline-block;
+        vertical-align: top; }
+      section.paquetes .pack .promos .whats .wt2 {
         position: relative;
-        top: 12px;
-        right: 118px;
-        color: black;
-        font-size: 12px;
-        font-weight: lighter; }
-    section.paquetes .pack .promos hr.dos {
+        bottom: 19px;
+        left: 45px;
+        background-color: #61008a;
+        color: #fff;
+        padding: 2px;
+        font-weight: bold;
+        font-size: 8px; }
+        section.paquetes .pack .promos .whats .wt2 #con {
+          color: #ffe800; }
+      section.paquetes .pack .promos .whats .wt {
+        font-size: 15px;
+        margin-left: 5px; }
+      section.paquetes .pack .promos .whats #wt {
+        font-weight: bolder;
+        color: #00b269; }
+      section.paquetes .pack .promos .ba {
+        font-weight: bold;
+        color: #61008a;
+        font-size: 3.5em;
+        margin-top: -35px; }
+        section.paquetes .pack .promos .ba .icon {
+          background: url(../img/planet.png);
+          background-size: cover;
+          width: 35.1px;
+          height: 38px; }
+        section.paquetes .pack .promos .ba .icon, section.paquetes .pack .promos .ba .cant, section.paquetes .pack .promos .ba #plus {
+          display: inline-block; }
+        section.paquetes .pack .promos .ba .cant {
+          position: relative;
+          top: -4px; }
+        section.paquetes .pack .promos .ba .datos {
+          font-size: 28px;
+          vertical-align: text-top;
+          margin-top: 22px;
+          font-weight: bold;
+          margin-left: -9px;
+          position: relative;
+          top: 3px; }
+        section.paquetes .pack .promos .ba .total {
+          font-size: 12px;
+          position: relative;
+          bottom: 11px;
+          color: black;
+          right: 48px;
+          /* margin-left: -48px; */
+          font-weight: lighter; }
+      section.paquetes .pack .promos .tel .icon {
+        background: url(../img/tel.png);
+        width: 35.6px;
+        height: 38px;
+        background-size: cover; }
+      section.paquetes .pack .promos .tel .icon, section.paquetes .pack .promos .tel .cant {
+        display: inline-block;
+        vertical-align: top; }
+      section.paquetes .pack .promos .tel .cant {
+        margin-left: 6px;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #61008a;
+        /* vertical-align: text-top; */
+        margin-top: -16px; }
+        section.paquetes .pack .promos .tel .cant .seg {
+          color: #61008a;
+          /* margin-top: -49px; */
+          font-size: 11px;
+          position: relative;
+          top: 12px;
+          right: 118px;
+          color: black;
+          font-size: 12px;
+          font-weight: lighter; }
+      section.paquetes .pack .promos hr.dos {
+        width: 77px;
+        margin-top: 7px;
+        margin-left: 46px; }
+      section.paquetes .pack .promos .sms .icon {
+        background: url(../img/sms.png);
+        width: 35.6px;
+        height: 38px;
+        background-size: cover; }
+      section.paquetes .pack .promos .sms .icon, section.paquetes .pack .promos .sms .cant {
+        display: inline-block;
+        vertical-align: top; }
+      section.paquetes .pack .promos .sms .cant {
+        margin-left: 6px;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #61008a;
+        /* vertical-align: text-top; */
+        margin-top: -16px; }
+        section.paquetes .pack .promos .sms .cant span.sms {
+          color: #61008a;
+          /* margin-top: -49px; */
+          font-size: 11px;
+          position: relative;
+          top: 12px;
+          right: 50px;
+          color: black;
+          font-size: 12px;
+          font-weight: lighter; }
+      section.paquetes .pack .promos .buy {
+        width: 159px;
+        height: 51px;
+        border-radius: 7px;
+        box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: #fff100;
+        text-align: center;
+        line-height: 49px;
+        position: relative;
+        left: -5px;
+        top: 34px; }
+    section.paquetes .pack #pk1 .img {
+      background-image: url("../img/foto1.png"); }
+    section.paquetes .pack #pk1 .content .ba {
+      width: max-content; }
+    section.paquetes .pack #pk1 .sms .cant span.sms {
+      right: 42px; }
+    section.paquetes .pack #pk2 {
+      margin-left: 51px; }
+      section.paquetes .pack #pk2 .img {
+        background-image: url("../img/foto2.png"); }
+      section.paquetes .pack #pk2 .ba .datos {
+        margin-left: 1px; }
+      section.paquetes .pack #pk2 .ba .total {
+        margin-left: 8px; }
+    section.paquetes .pack #pk3 {
+      margin-left: 51px; }
+      section.paquetes .pack #pk3 .img {
+        background-image: url("../img/foto3.png"); }
+      section.paquetes .pack #pk3 .ba {
+        margin-top: -122px;
+        width: max-content; }
+        section.paquetes .pack #pk3 .ba .datos {
+          margin-left: 1px; }
+        section.paquetes .pack #pk3 .ba .total {
+          margin-left: 8px; }
+        section.paquetes .pack #pk3 .ba p#data {
+          font-size: 16px;
+          font-weight: bold; }
+        section.paquetes .pack #pk3 .ba p#navi {
+          color: black;
+          font-size: 7px;
+          line-height: 7px;
+          width: 43px;
+          text-align: left;
+          margin-left: -8px; }
+        section.paquetes .pack #pk3 .ba p {
+          display: inline-block; }
+        section.paquetes .pack #pk3 .ba #plus {
+          position: relative;
+          right: 48px; }
+          section.paquetes .pack #pk3 .ba #plus .navegacion {
+            position: relative;
+            top: 52px; }
+          section.paquetes .pack #pk3 .ba #plus .social {
+            position: relative;
+            top: -13px; }
+            section.paquetes .pack #pk3 .ba #plus .social #data, section.paquetes .pack #pk3 .ba #plus .social #navi, section.paquetes .pack #pk3 .ba #plus .social .icons {
+              display: inline-block; }
+            section.paquetes .pack #pk3 .ba #plus .social .icons {
+              width: 28px;
+              margin-left: -20px; }
+              section.paquetes .pack #pk3 .ba #plus .social .icons #fb {
+                background: url("../img/fb.png");
+                background-size: cover;
+                width: 13px;
+                height: 13px; }
+              section.paquetes .pack #pk3 .ba #plus .social .icons #tw {
+                background: url("../img/tw.png");
+                background-size: cover;
+                width: 13px;
+                height: 13px;
+                float: right;
+                margin-top: -12px; }
+      section.paquetes .pack #pk3 .tel .cant .seg {
+        right: 142px; }
+      section.paquetes .pack #pk3 .sms .cant span.sms {
+        right: 78px; }
+    section.paquetes .pack hr.uno {
       width: 77px;
-      margin-top: 7px;
-      margin-left: 46px; }
-    section.paquetes .pack .promos .sms .icon {
-      background: url(../img/sms.png);
-      width: 35.6px;
-      height: 38px;
-      background-size: cover; }
-    section.paquetes .pack .promos .sms .icon, section.paquetes .pack .promos .sms .cant {
+      margin-top: -15px;
+      margin-left: 50px; }
+
+.services {
+  border: 1px solid black;
+  width: auto;
+  height: 105px; }
+  .services .items {
+    width: max-content;
+    margin: 0 auto; }
+    .services .items div {
+      line-height: 32px;
+      border-left: 2px;
+      border-left-color: #c4c4c4;
+      margin-left: 124px;
+      width: fit-content;
+      height: 19px;
       display: inline-block;
-      vertical-align: top; }
-    section.paquetes .pack .promos .sms .cant {
-      margin-left: 6px;
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #61008a;
-      /* vertical-align: text-top; */
-      margin-top: -16px; }
-      section.paquetes .pack .promos .sms .cant span.sms {
-        color: #61008a;
-        /* margin-top: -49px; */
-        font-size: 11px;
-        position: relative;
-        top: 12px;
-        right: 50px;
-        color: black;
-        font-size: 12px;
-        font-weight: lighter; }
-  section.paquetes .pack #pk1 .sms .cant span.sms {
-    right: 42px; }
-  section.paquetes .pack #pk2 {
-    margin-left: 51px; }
-    section.paquetes .pack #pk2 .ba .datos {
-      margin-left: 1px; }
-    section.paquetes .pack #pk2 .ba .total {
-      margin-left: 8px; }
-  section.paquetes .pack #pk3 {
-    margin-left: 51px; }
-    section.paquetes .pack #pk3 .ba .datos {
-      margin-left: 1px; }
-    section.paquetes .pack #pk3 .ba .total {
-      margin-left: 8px; }
-    section.paquetes .pack #pk3 .tel .cant .seg {
-      right: 142px; }
-    section.paquetes .pack #pk3 .sms .cant span.sms {
-      right: 78px; }
-  section.paquetes .pack hr.uno {
-    width: 77px;
-    margin-top: -15px;
-    margin-left: 50px; }
+      font-size: 18px;
+      color: #61008a; }
 
 /*# sourceMappingURL=main.css.map */

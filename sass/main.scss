@@ -54,12 +54,31 @@ section.paquetes {
         }
         .promos {
             border: 1px solid black;
-            padding: 17px;
+            border-radius: 10px;
+            box-shadow: 0 4px 5px 0 rgba(130, 130, 130, 0.2);
+            border: solid 1.3px var(--light-eggplant-20);
+            background-color: #ffffff;
             width: 330px;
-            height: 390px;
+            height: 379px;
             display: inline-block;
 
             vertical-align: top;
+            .img {
+                width: 22.5%;
+                height: 386px;
+                background-size: 80px 389px;
+                background-position: 155px 777px;
+                /* float: left; */
+                display: inline-block;
+            }
+            .content {
+                width: 76%;
+                display: inline-block;
+                /* padding: 17px; */
+                vertical-align: top;
+                margin-left: 0px;
+                height: 100%;
+            }
             .price {
                 color: #61008a;
                 font-weight: bold;
@@ -117,7 +136,7 @@ section.paquetes {
                     width: 35.1px;
                     height: 38px;
                 }
-                .icon, .cant {
+                .icon, .cant, #plus {
                     display: inline-block;
                 }
                 .cant {
@@ -215,8 +234,28 @@ section.paquetes {
                     }
                 }
             }
+            .buy {
+                width: 159px;
+                height: 51px;
+                border-radius: 7px;
+                box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+                background-color: #fff100;
+                text-align:center;
+                line-height: 49px;
+                position: relative;
+                left: -5px;
+                top: 34px;
+            }
         }
         #pk1 {
+            .img {
+                background-image: url('../img/foto1.png');
+            }
+            .content {
+                .ba {
+                    width: max-content;
+                }
+            }
             .sms {
                 .cant {
                     span.sms {
@@ -226,6 +265,9 @@ section.paquetes {
             }
         }
         #pk2 {
+            .img {
+                background-image: url('../img/foto2.png');
+            }
             margin-left: 51px;
             .ba {
                 .datos {
@@ -237,13 +279,67 @@ section.paquetes {
             }
         }
         #pk3 {
+            .img {
+                background-image: url('../img/foto3.png');
+            }
             margin-left: 51px;
             .ba {
+                margin-top: -122px;
+                width: max-content;
                 .datos {
                     margin-left: 1px;
                 }
                 .total {
                     margin-left: 8px;
+                }
+                p#data {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                p#navi {
+                    color: black;
+                    font-size: 7px;
+                    line-height: 7px;
+                    width: 43px;
+                    text-align: left;
+                    margin-left: -8px;
+                }
+                p {
+                    display: inline-block;
+                }
+                #plus {
+                    position: relative;
+                    right: 48px;
+                    .navegacion {
+                        position: relative;
+                        top: 52px;
+                        
+                    }
+                    .social {
+                        position: relative;
+                        top: -13px;
+                        #data, #navi, .icons {
+                            display: inline-block;
+                        }
+                        .icons {
+                            width: 28px;
+                            margin-left: -20px;
+                            #fb {
+                                background: url('../img/fb.png');
+                                background-size: cover; 
+                                width: 13px;
+                                height: 13px;
+                            }
+                            #tw {
+                                background: url('../img/tw.png');
+                                background-size: cover; 
+                                width: 13px;
+                                height: 13px;
+                                float: right;
+                                margin-top: -12px;
+                            }
+                        }
+                    }
                 }
             }
             .tel {
@@ -266,6 +362,31 @@ section.paquetes {
             width: 77px;
             margin-top: -15px;
             margin-left: 50px;
+        }
+    }
+    margin-bottom: 80px;
+    
+}
+
+.services {
+    border: 1px solid black;
+    width: auto;
+    height: 105px;
+    
+    .items {
+        width: max-content;
+        margin: 0 auto;
+        
+        div {
+            line-height: 32px;
+            border-left: 2px;
+            border-left-color: #c4c4c4;
+            margin-left: 124px;
+            width: fit-content;
+            height: 19px;
+            display: inline-block;
+            font-size: 18px;
+            color: #61008a;
         }
     }
 }
