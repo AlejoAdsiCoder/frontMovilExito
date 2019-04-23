@@ -1,49 +1,85 @@
-header {
-    height: 110px;
-    nav {
-        div#movilexito {
-            background-image: url(../img/movil-exito.jpg);
-            background-size: 141px;
-            background-repeat: no-repeat;
-            border-radius: 0px 56px 56px 0px;
-            width: 156.7px;
-            background-color: white;
-            height: 84px;
-            position: absolute;
-            z-index: 2;
-        }
-        background-color: #61008a;
-        height: 71px;
-        ol#menu {
-            margin: 0 auto;
-            /* border: 1px solid white; */
-            list-style: none;
-            width: 811px;
-            position: absolute;
-            top: 24px;
-            left: 430px;
-            li {
-                display: inline-block;
-                margin-left: 8px;
-                color: white;
-            }
-        }
-        div#movilexito, ol#menu {
+nav {
+    div#movilexito {
+        background-image: url(../img/movil-exito.jpg);
+        background-size: 141px;
+        background-repeat: no-repeat;
+        border-radius: 0px 56px 56px 0px;
+        width: 156.7px;
+        background-color: white;
+        height: 84px;
+        position: absolute;
+        z-index: 2;
+    }
+    background-color: #61008a;
+    height: 71px;
+    ol#menu {
+        margin: 0 auto;
+        /* border: 1px solid white; */
+        list-style: none;
+        width: 811px;
+        position: absolute;
+        top: 24px;
+        left: 430px;
+        li {
             display: inline-block;
+            margin-left: 8px;
+            color: white;
         }
+    }
+    div#movilexito, ol#menu {
+        display: inline-block;
+    }
 
+}
+header {
+    background-image: url(../img/img-slider.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    margin-top: 0px;
+
+    .b-busqueda {
+        height: 179px;
+        background: #fff;
+        display: none;
+        
+        div {
+            margin: 0 auto;
+            margin-top: 45px;
+        }
     }
     
+nav#submenu {
+    height: 179px;
+    background: #fff;
+    display: none;
+    /* opacity: 0.5; */
+    ul {
+        text-align:center;
+        li {
+            
+            vertical-align: top;
+            margin: 16px;
+            display:inline-block;
+            padding: 5px;
+            padding-left: 26px;
+            text-align:center;
+            list-style: none;
+            &.line {
+                border-left: 1px solid #696969;
+                height: 138px;
+                text-align:center;
+                color: #61008A;
+            }
+            &.pack {
+                margin-left: 0px;
+            }
+        }
+    }
+}
 }
 
-section.bann {
-    background-image: url(../img/img-slider.png);
-    width: 1920px;
-    height: 595px;
-    background-size: cover;
-    position: relative;
-    bottom: 42px;
-}
+
 
 section.paquetes {
     .pack {
@@ -369,24 +405,165 @@ section.paquetes {
 }
 
 .services {
-    border: 1px solid black;
     width: auto;
     height: 105px;
+    border-top: 4px solid #F3F3F4;
+    border-bottom: 4px solid #F3F3F4;
+    background-color: #FAFAFA;
     
     .items {
         width: max-content;
         margin: 0 auto;
-        
+
         div {
-            line-height: 32px;
-            border-left: 2px;
-            border-left-color: #c4c4c4;
-            margin-left: 124px;
-            width: fit-content;
-            height: 19px;
             display: inline-block;
-            font-size: 18px;
-            color: #61008a;
+            span {
+                margin-left: 15px;
+            }
+            img {
+                width: 30px;
+            }
         }
+        
+        div.item {
+            line-height: 32px;
+            border-left: 2px solid;
+            border-left-color: #c4c4c4;
+            margin: 30px;
+            /* text-align: right; */
+            /* opacity: 0.45; */
+            /* width: fit-content; */
+            height: 38px;
+            display: inline-block;
+            font-size: 14px;
+            padding-left: 37px;
+            color: #61008a;
+            text-align: center;
+            /* border: 1px solid black; */
+            vertical-align: middle;
+        }
+    }
+}
+
+.com {
+    padding: 50px 0px;
+    text-align: center;
+    img#com {
+        width: 900px;
+    }
+    img#chat {
+        position: absolute;
+        right: 0px;
+        margin-top: 151px;
+    }
+    
+}
+section.recharges {
+    background: #FAFAFA;
+    div {
+        display: inline-block;
+        margin: 42px;
+        vertical-align: middle;
+        
+        p {
+            line-height: normal;
+            color: #4F4F4F;
+            font-weight: bold;
+            width: 90px;
+        }
+        
+    }
+    .exito {
+        background: url('../img/img-exito.png');
+        width: 70px;
+        height: 70px;
+    }
+    .baloto {
+        background: url('../img/img-baloto.png');
+        width: 130px;
+        height: 50px;
+    }
+    .carulla {
+        background: url('../img/img-carulla.png');
+        width: 109px;
+        height: 59px;
+    }
+    .movil-red {
+        background: url('../img/img-movii.png') no-repeat;
+        width: 72px;
+        height: 72px;
+    }
+    .ptm {
+        background: url('../img/img-ptm.png');
+        width: 125px;
+        height: 48px;
+    }
+    div#izq {
+        width: 67px;
+        /* position: absolute; */
+        /* right: 0px; */
+        margin-left: 0px;
+        height: 79px;
+        line-height: 69px;
+        text-align: center;
+        font-size: 34px;
+        color: #E7E7E7;
+        background: #F3F3F4;
+        border-radius: 0px 34px 34px 0px;
+    }
+    div#der {
+        width: 67px;
+        height: 79px; 
+        margin-right: 0px;
+        line-height: 69px;
+        text-align: center;
+        font-size: 34px;
+        color: #E7E7E7;
+        background: #F3F3F4;
+        border-radius: 34px 0px 0px 34px;
+    }
+}
+footer {
+    div {
+        #movil-exito {
+            background: url('../img/logo-bn.png');
+            width: 130px;
+            height: 52px;
+
+        }
+        display: inline-block;
+        font-size: 0.8em;
+        width: 24.7%;
+        margin-top: 27px;
+        vertical-align: top;
+        padding-left: 25px;
+        #linea {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        span {
+            font-weight: bolder;
+            color: #4F4F4F;
+        }
+        ul {
+            margin-left: -21px;
+        }
+        
+        &.line {
+            border-left: 1px solid black;
+        }
+    }
+}
+#derechos {
+    background-color: #61008a;
+    padding: 30px;
+    p {
+        width: 739px;
+        text-align: center;
+        height: 24px;
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+        color: #fafafa;
     }
 }

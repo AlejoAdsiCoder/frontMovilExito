@@ -7,32 +7,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <div id="movilexito">
+            <a href=""></a>
+        </div>
+        <ol id="menu">
+            <li id="submenu1">Productos y Servicios</li>
+            <li>Beneficios y Alianzas</li>
+            <li>Información importante para los usuarios</li>
+            <li>Realiza una PQR</li>
+            <li id="search"><i class="fas fa-search"></i></li>
+            <li><i class="far fa-user"></i></li>
+        </ol>
+    </nav>
+    
     <header>
-        <nav>
-            <div id="movilexito">
-                <a href=""></a>
-            </div>
-            <ol id="menu">
-                <li>Productos y Servicios</li>
-                <li>Beneficios y Alianzas</li>
-                <li>Información importante para los usuarios</li>
-                <li>Realiza una PQR</li>
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="far fa-user"></i></li>
-            </ol>
+        <nav id="submenu">
+            <ul>
+                <li>Ofertas</li>
+                <li class="line pack">Paquetes<ul>
+                    <li>Compuestos</li>
+                </ul></li>
+                <li class="line">Legales de Ofertas</li>
+                <li class="line">Compra de paquetes y recarga</li>
+                <li class="line">Compra tu sim</li>
+            </ul>
         </nav>
+        <div class="b-busqueda">
+        <div>
+            <div class="row">
+            <div class="col">
+            <input type="text" class="form-control col-md-12 m-auto" value="Ingresa tu busqueda">
+            </div>
+            <div class="col">
+            <button class="btn btn-warning">Buscar</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <section class="bann">
+            <div id="social">
+                <button class="fb"></button>
+                <button class="tw"></button>
+                <button class="in"></button>
+            </div>
+        </section>
     
 </header>
-<section class="bann">
-        <div id="social">
-            <button class="fb"></button>
-            <button class="tw"></button>
-            <button class="in"></button>
-        </div>
-    </section>
+
    
 <section class="paquetes">
     <div class="pack">
@@ -146,22 +172,80 @@
     </section>
     <section class="services">
         <div class="items">
-            <div>Portabilidad</div>
-            <div>Servicio al cliente</div>
-            <div>Promociones</div>
-            <div id="none">Cobertura</div>
+            <div><img src="img/icon-portability.png"><span>Portabilidad</span></div>
+            <div class="item"><img src="img/icon-support.png"><span>Servicio al cliente</span></div>
+            <div class="item"><img src="img/icon-promo.png"><span>Promociones</span></div>
+            <div class="item"><img src="img/icon-coverage.png"><span>Cobertura</span></div>
         </div>
     </section>
     <section class="com">
-        <img src="" alt="">
+        <img id="com" src="img/img-banner.png" alt="">
+        <img id="chat" src="img/chat.png" alt="">
     </section>
     <section class="recharges">
-        <p>Puntos de recarga:</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <div id="izq"><</div>
+        <div><p>Puntos de recarga:</p></div>
+        <div class="exito"></div>
+        <div class="baloto"></div>
+        <div class="carulla"></div>
+        <div class="movil-red"></div>
+        <div class="ptm"></div>
+        <div id="der">></div>
     </section>
+    <footer>
+        <div>
+            <div id="movil-exito"></div>
+            <p>Servicio al cliente:<br><span id="linea">01 8000 51 7677<br> *999</span></p>
+            
+            <p>Nuestros almacenes</p>
+            <p>¿Necesitas ayuda?</p>
+            <p>Síguenos</p>
+            <div id="btn-social">
+                <div id="fb"></div>
+                <div id="tw"></div>
+                <div id="m-velocidad"></div> 
+            </div>
+        </div>
+        <div class="line">
+            <p><span>Acerca de Nosotros</span></p>
+            <ul>
+                <li>Grupo Éxito</li>
+                <li>Fundación éxito</li>
+                <span>Otros Servicios</span>
+                <li>Tarjeta Éxito</li>
+                <li>Seguros Éxito</li>
+                <li>Viajes Éxito</li>
+                <li>Puntos Colombia</li>
+            </ul>
+        </div>
+        <div class="line">
+            <p><span>Legales</span></p>
+            <ul>
+                <li>Politica de tratamiento de datos personales</li>
+                <li>Habeas data</li>
+                <li>Contrato prestación de servicios de comunicaciones modalidad prepago</li>
+                <li>Contra el material con contenido de abuso de niñas, niños y adolescentes</li>
+                <li>En TIC confio</li>
+                <li>Seguridad de la red</li>
+            </ul>
+        </div>
+        <div>
+            <button id="suscrip">Suscríbete</button>
+            <ul>
+                <li>Mecanismos de bloqueo de material con contenido de abuso de niñas, niños y adolescentes</li>
+                <li>Homologación de equipos</li>
+                <li>Internet sano</li>
+                <li>Quiero dejar de recibir SMS de Móvil Éxito</li>
+                <li>Legales</li>
+            </ul>
+        </div>
+          
+    </footer>
+    <div id="derechos">
+        <p>2019 éxito®, marca registrada de Grupo Éxito S.A. NIT 890900608-9. Todos los derechos reservados</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
