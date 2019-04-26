@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
@@ -17,12 +18,30 @@
         </div>
         <ol id="menu">
             <li id="submenu1">Productos y Servicios</li>
-            <li>Beneficios y Alianzas</li>
-            <li>Información importante para los usuarios</li>
-            <li>Realiza una PQR</li>
-            <li id="search"><i class="fas fa-search"></i></li>
-            <li><i class="far fa-user"></i></li>
+            <li class="line">Beneficios y Alianzas</li>
+            <li class="line">Información importante para los usuarios</li>
+            <li class="line">Realiza una PQR</li>
+            <li class="line" id="search"><i class="fas fa-search"></i></li>
+            <li class="line"><i class="far fa-user"></i></li>
+            <li></li>
         </ol>
+        <div id="movil">
+            <ul>
+                <li id="search"></li>
+                <li><span></span></li>
+                <li id="login"></li>
+                <li><span></span></li>
+                <li id="menu">
+                    <ul>
+                        <li>Productos y servicios</li>
+                        <li>Beneficios y Alianzas</li>
+                        <li>Información importante para los usuarios</li>
+                        <li>Realiza una PQR</li>
+                    </ul>
+                </li>
+            </ul>
+                
+        </div>
     </nav>
     
     <header>
@@ -37,9 +56,11 @@
                 <li class="line">Compra tu sim</li>
             </ul>
         </nav>
+        
+        <section id="publicity"></section>
         <div class="b-busqueda">
         <div>
-            <div class="row">
+        <div class="row">
             <div class="col">
             <input type="text" class="form-control col-md-12 m-auto" value="Ingresa tu busqueda">
             </div>
@@ -62,8 +83,9 @@
    
 <section class="paquetes">
     <div class="pack">
-        <h2>Conoce nuestros paquetes destacados</h2>
-        <hr>
+        <h4>Conoce nuestros
+             <span>paquetes destacados</span></h4>
+        <hr id="line">
         <div class="promos" id="pk1">
             <div class="img"></div>
             <div class="content">
@@ -184,12 +206,15 @@
     </section>
     <section class="recharges">
         <div id="izq"><</div>
+        <div class="brands">
         <div><p>Puntos de recarga:</p></div>
         <div class="exito"></div>
         <div class="baloto"></div>
         <div class="carulla"></div>
         <div class="movil-red"></div>
         <div class="ptm"></div>
+        
+        </div>
         <div id="der">></div>
     </section>
     <footer>

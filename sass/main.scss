@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px) {
+    * {
+        max-width: 100%;
+    }
+}
+
 nav {
     div#movilexito {
         background-image: url(../img/movil-exito.jpg);
@@ -12,28 +18,109 @@ nav {
     }
     background-color: #61008a;
     height: 71px;
+    max-width: 100%;
     ol#menu {
-        margin: 0 auto;
-        /* border: 1px solid white; */
-        list-style: none;
-        width: 811px;
+        width: max-content;
         position: absolute;
-        top: 24px;
-        left: 430px;
+        top: 16px;
+        right: 135px;
         li {
             display: inline-block;
-            margin-left: 8px;
+            margin-top: 8px;
             color: white;
+            /* margin-left: 16px; */
+            /* width: 245px; */
+            text-align: center;
+            padding: 0px 41px;
+            &.line {
+                
+                border-left: 2px solid rgba(255, 255, 255, 0.3);
+            }
         }
+    }
+    div#movil {
+        display: none;
     }
     div#movilexito, ol#menu {
         display: inline-block;
     }
 
 }
+@media screen and (max-width: 500px) {
+    nav {  
+        max-height: 51px;
+        max-width: 100%;
+        div#movilexito { 
+            background-position: 0px;
+            background-size: 120px;
+            background-repeat: no-repeat;
+            /* border: 1px solid; */
+            width: 128px;
+            background-color: white;
+            height: 61px;
+            position: absolute;
+            z-index: 2;
+        }
+        ol#menu {
+            display: none;
+        }
+        div#movil {
+            position: absolute;
+            right: 0px;
+            display: block;
+            margin-top: 7px;
+            margin-right: 16px;
+        }
+        div#movil ul span {
+            width: 1px;
+            /* border: 1px solid #fff; */
+            /* margin: 10px; */
+            height: 27px;
+            opacity: 0.2;
+            display: inline-block;
+            background: aliceblue;
+        }
+
+        div#movil ul li {
+        
+            /* background-size: contain;
+            background-repeat: no-repeat; */
+            width: 22px;
+            height: 22px;
+            text-align: center;
+            margin: 2px;
+            margin-top: 3px;
+            display: inline-block;
+            
+
+            &#search {
+                background: url('../img/search.png');
+                background-repeat: no-repeat; 
+            }
+            &#login {
+                background: url('../img/group.png');
+                width: 20px;
+                height: 24px;
+                background-repeat: no-repeat; 
+            }
+            &#menu {
+                background: url('../img/icon-menu.png');
+                background-repeat: no-repeat; 
+                width: 21px;
+                height: 17px;
+            }
+            
+            &#menu ul {
+                display: none;
+            }
+        }
+    }
+}
+
 header {
     background-image: url(../img/img-slider.png);
-    background-size: contain;
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 500px;
     margin-top: 0px;
@@ -77,8 +164,60 @@ nav#submenu {
         }
     }
 }
+section.bann {
+    width: min-content;
+    height: 102px;
+    padding: 11px;
+    /* margin-top: 25px; */
+    background: white;
+    border-radius: 0px 8px 8px 0px;
+    position: relative;
+    top: 376px;
+    button {
+        border: 0px;
+        outline: none;
+    }
+    .fb {
+        background: url(../img/fb.png);
+        background-size: contain;
+        width: 23px;
+        height: 23px;
+    }
+    .tw {
+        background: url(../img/icon-tw.png);
+        background-size: contain;
+        width: 23px;
+        background-repeat: no-repeat;
+        height: 23px;
+    }
+    .in {
+        background: url(../img/icon-ins.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 23px;
+    }
+}
 }
 
+@media screen and (max-width: 500px) {
+    header {  
+        background-image: url('../img/image.png');
+        background-size: cover;
+        min-height: 179px;
+        max-width: 100%;
+        section#publicity {
+            background: url(../img/bannerresponsive.png);
+            background-size: cover;
+            width: 250px;
+            height: 138px;
+            margin: 0 auto;
+            position: relative;
+            top: 143px;
+        }
+    }
+    
+}
 
 
 section.paquetes {
@@ -314,6 +453,11 @@ section.paquetes {
                 }
             }
         }
+        @media screen and (max-width: 500px) {
+            #pk2 {
+                margin: 0;
+            }
+        }
         #pk3 {
             .img {
                 background-image: url('../img/foto3.png');
@@ -393,6 +537,12 @@ section.paquetes {
                     }
                 }
             }
+            
+        }
+        @media screen and (max-width: 500px) {
+            #pk3 {
+                margin: 0;
+            }
         }
         hr.uno {
             width: 77px;
@@ -402,6 +552,27 @@ section.paquetes {
     }
     margin-bottom: 80px;
     
+}
+@media screen and (max-width: 500px) {
+    section.paquetes {
+        margin-top: 56px;
+        .pack {
+            h4 {
+                text-align: center;
+                margin: 0 45px;
+                span {
+                    color: #623e84;
+                }
+            }
+            hr#line {
+                width: 102px;
+                border: 1px solid black;
+            }
+            #pk1 {
+                margin: 0px 28px;
+            }
+        }
+    }
 }
 
 .services {
@@ -460,49 +631,13 @@ section.paquetes {
 }
 section.recharges {
     background: #FAFAFA;
-    div {
-        display: inline-block;
-        margin: 42px;
-        vertical-align: middle;
-        
-        p {
-            line-height: normal;
-            color: #4F4F4F;
-            font-weight: bold;
-            width: 90px;
-        }
-        
-    }
-    .exito {
-        background: url('../img/img-exito.png');
-        width: 70px;
-        height: 70px;
-    }
-    .baloto {
-        background: url('../img/img-baloto.png');
-        width: 130px;
-        height: 50px;
-    }
-    .carulla {
-        background: url('../img/img-carulla.png');
-        width: 109px;
-        height: 59px;
-    }
-    .movil-red {
-        background: url('../img/img-movii.png') no-repeat;
-        width: 72px;
-        height: 72px;
-    }
-    .ptm {
-        background: url('../img/img-ptm.png');
-        width: 125px;
-        height: 48px;
-    }
+
+
     div#izq {
         width: 67px;
-        /* position: absolute; */
-        /* right: 0px; */
-        margin-left: 0px;
+        position: absolute;
+        left: 0px;
+        margin-top: 38px;
         height: 79px;
         line-height: 69px;
         text-align: center;
@@ -511,17 +646,66 @@ section.recharges {
         background: #F3F3F4;
         border-radius: 0px 34px 34px 0px;
     }
-    div#der {
-        width: 67px;
-        height: 79px; 
-        margin-right: 0px;
-        line-height: 69px;
-        text-align: center;
-        font-size: 34px;
-        color: #E7E7E7;
-        background: #F3F3F4;
-        border-radius: 34px 0px 0px 34px;
+    
+    .brands {
+        width: max-content;
+        margin: 0 auto;
+        div {
+            display: inline-block;
+            margin: 42px;
+            vertical-align: middle;
+        
+            p {
+                line-height: normal;
+                color: #4F4F4F;
+                font-weight: bold;
+                width: 90px;
+            }
+        
+        }
+        .exito {
+            background: url('../img/img-exito.png');
+            width: 70px;
+            height: 70px;
+        }
+        .baloto {
+            background: url('../img/img-baloto.png');
+            width: 130px;
+            height: 50px;
+        }
+        .carulla {
+            background: url('../img/img-carulla.png');
+            width: 109px;
+            height: 59px;
+        }
+        .movil-red {
+            background: url('../img/img-movii.png') no-repeat;
+            width: 72px;
+            height: 72px;
+        }
+        .ptm {
+            background: url('../img/img-ptm.png');
+            width: 125px;
+            height: 48px;
+        }
+        
+
     }
+    div#der {
+            width: 67px;
+            height: 79px; 
+            margin-right: 0px;
+            line-height: 69px;
+            text-align: center;
+            position: absolute;
+            right: 0px;
+            margin-top: -114px;
+            font-size: 34px;
+            color: #E7E7E7;
+            background: #F3F3F4;
+            border-radius: 34px 0px 0px 34px;
+        }
+    
 }
 footer {
     div {
