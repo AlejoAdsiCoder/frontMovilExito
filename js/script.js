@@ -17,4 +17,17 @@ $(document).ready(function(){
     });
 });
 
+var btn = document.getElementById('#menu');
+var nav = document.getElementById('#nav-mobile')
+var click = 0;
+btn.onclick = function() {
+    alert("hola");
+    nav.style.display = "block";
+    click++;
+    if(click > 1) {
+        nav.style.display = "none";
+        click = 0;
+    }
+
+}
 

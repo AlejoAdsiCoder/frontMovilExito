@@ -216,34 +216,37 @@ section.bann {
             top: 125px;
         }
         section#nav-mobile {
-            display: block;
+            display: none;
+            z-index: 1;
             max-width: 100%;
             background-color: #61008A;
             position: absolute;
             top: 51px;
             border-top: 4px solid #fff;
 
-            ul.n1 {
-                li {
-                    list-style: none;
-                    /* height: 50px; */
+            div.n1 {
+                div {
                     margin: 25px;
                     color: #fff;
                     max-width: 100%;
                     border-bottom: 2px solid;
-                    div.n2 {
-                        background: #fff;
-                        
-                        display: block;
-                        position: relative;
-                        left: -64px;
-                        li {
-                            color: #61008A;
-                            width: 100%;
-                        }
-                    }
+                    
+                    
                 }
                 
+            }
+            .submenu {
+                .n2 {
+                    background: #fff;
+                    
+                    display: block;
+                    position: relative;
+                    left: -64px;
+                    div {
+                        color: #61008A;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
